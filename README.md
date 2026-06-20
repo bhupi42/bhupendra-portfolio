@@ -149,6 +149,13 @@ A modern, professional, and fully responsive portfolio website built with React,
 - **Tablet**: 768px to 1199px
 - **Mobile**: Below 768px
 
+## Vite dev server:
+
+```
+npm install
+npm run dev
+```
+
 ## 🚀 Deployment
 
 ### Deploy to Netlify
