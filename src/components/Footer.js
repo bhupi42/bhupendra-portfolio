@@ -46,10 +46,10 @@ export default function Footer() {
           <div className="footer-section">
             <h3><i className="fas fa-envelope"></i> Get In Touch</h3>
             <p>
-              <i className="fas fa-envelope"></i> bhupendra@example.com
+              <i className="fas fa-envelope"></i> bhupendrapatidar42@gmail.com
             </p>
             <p>
-              <i className="fas fa-phone"></i> +91-XXXXXXXXXX
+              <i className="fas fa-phone"></i> +91 8878982889
             </p>
             <p>
               <i className="fas fa-map-marker-alt"></i> India

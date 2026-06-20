@@ -10,14 +10,6 @@ export default function Home() {
     { number: '5+', label: 'Languages Mastered' },
   ];
 
-  const downloadResume = () => {
-    // Create a link to download resume (placeholder)
-    const link = document.createElement('a');
-    link.href = '#';
-    link.download = 'Bhupendra_Patidar_Resume.pdf';
-    link.click();
-  };
-
   return (
     <main>
       {/* Hero Section */}
@@ -35,12 +27,23 @@ export default function Home() {
             </p>
 
             <div className="hero-buttons">
-              <button className="btn btn-primary" onClick={downloadResume}>
+              <a
+                className="btn btn-primary"
+                href="/bhupendra-portfolio/Resume%20(1).pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
                 <i className="fas fa-download"></i> Download Resume
-              </button>
-              <Link to="/contact" className="btn btn-secondary">
-                <i className="fas fa-envelope"></i> Hire Me
-              </Link>
+              </a>
+              <a
+                href="https://wa.me/918878982889"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary"
+              >
+                <i className="fab fa-whatsapp"></i> Hire Me
+              </a>
               <Link to="/projects" className="btn btn-secondary">
                 <i className="fas fa-folder"></i> View Projects
               </Link>

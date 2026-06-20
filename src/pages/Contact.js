@@ -39,7 +39,7 @@ export default function Contact() {
           from_email: formData.email,
           company: formData.company,
           message: formData.message,
-          to_email: 'bhupendra@example.com',
+          to_email: 'bhupendrapatidar42@gmail.com',
         }
       );
 
@@ -66,14 +66,14 @@ export default function Contact() {
     {
       icon: 'fa-envelope',
       title: 'Email',
-      value: 'bhupendra@example.com',
-      link: 'mailto:bhupendra@example.com',
+      value: 'bhupendrapatidar42@gmail.com',
+      link: 'mailto:bhupendrapatidar42@gmail.com',
     },
     {
       icon: 'fa-phone',
       title: 'Phone',
-      value: '+91-XXXXXXXXXX',
-      link: 'tel:+91XXXXXXXXXX',
+      value: '+91 8878982889',
+      link: 'tel:+918878982889',
     },
     {
       icon: 'fa-map-marker-alt',
