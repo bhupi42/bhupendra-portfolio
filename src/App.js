@@ -15,6 +15,9 @@ import Contact from './pages/Contact';
 
 function App() {
   const [theme, setTheme] = useState('light');
+  const routerBasename = window.location.pathname.startsWith('/bhupendra-portfolio')
+    ? '/bhupendra-portfolio'
+    : '/';
 
   useEffect(() => {
     // Check localStorage for saved theme preference
@@ -31,7 +34,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename={routerBasename}>
       <div className="App" data-theme={theme}>
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         <Routes>
