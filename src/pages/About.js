@@ -4,7 +4,7 @@ import './About.css';
 export default function About() {
   const achievements = [
     { icon: 'fa-graduation-cap', title: 'MCA Graduate', description: 'Advanced degree in Computer Applications' },
-    { icon: 'fa-wrench', title: 'Expert Automation', description: '8+ years in automation testing expertise' },
+    { icon: 'fa-wrench', title: 'Expert Automation', description: '9+ years in automation testing expertise' },
     { icon: 'fa-briefcase', title: 'Enterprise Experience', description: 'Worked with Fortune 500 companies' },
     { icon: 'fa-chalkboard-user', title: 'Passionate Trainer', description: 'Training and mentoring professionals' },
   ];
@@ -27,7 +27,7 @@ export default function About() {
               </div>
               <div className="about-stats">
                 <div className="about-stat">
-                  <h3>8+</h3>
+                  <h3>9+</h3>
                   <p>Years of Experience</p>
                 </div>
                 <div className="about-stat">
@@ -45,7 +45,7 @@ export default function About() {
               <h3>Senior QA Automation Engineer</h3>
               <p>
                 I am a dedicated QA professional with a Master's degree in Computer Applications (MCA). 
-                With 8+ years of hands-on experience in the IT industry, I've developed expertise in 
+                With 9+ years of hands-on experience in the IT industry, I've developed expertise in 
                 comprehensive quality assurance practices.
               </p>
 
@@ -53,7 +53,7 @@ export default function About() {
                 <h4><i className="fas fa-check-circle"></i> Key Highlights</h4>
                 <ul>
                   <li>
-                    <strong>Automation Testing:</strong> Expert in Playwright, Selenium, Cypress, and TestCafe frameworks
+                    <strong>Automation Testing:</strong> Expert in Playwright, Selenium, and TestCafe frameworks
                   </li>
                   <li>
                     <strong>API Testing:</strong> Proficient with Postman, RestAssured, and Playwright API

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 export default function Footer() {
@@ -10,37 +11,35 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <h3><i className="fas fa-briefcase"></i> Professional</h3>
-            <p>Senior QA Automation Engineer with 8+ years of experience in automated testing and quality assurance.</p>
+            <p>Senior QA Automation Engineer with 9+ years of experience in automated testing and quality assurance.</p>
             <div className="footer-links">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <a href="https://www.linkedin.com/in/bhupendra-patidar" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub">
+              <a href="https://github.com/bhupi42" target="_blank" rel="noopener noreferrer" title="GitHub">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" title="YouTube">
+              <a href="https://www.youtube.com/@codebun" target="_blank" rel="noopener noreferrer" title="YouTube">
                 <i className="fab fa-youtube"></i>
               </a>
-              <a href="https://upwork.com" target="_blank" rel="noopener noreferrer" title="Upwork">
-                <i className="fab fa-upwork"></i>
-              </a>
+            
             </div>
           </div>
 
           <div className="footer-section">
             <h3><i className="fas fa-link"></i> Quick Links</h3>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/skills">Skills</Link>
+            <Link to="/experience">Experience</Link>
           </div>
 
           <div className="footer-section">
             <h3><i className="fas fa-file"></i> Resources</h3>
-            <a href="#projects">Projects</a>
-            <a href="#services">Services</a>
-            <a href="#training">Training</a>
-            <a href="#contact">Contact</a>
+            <Link to="/projects">Projects</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/training">Training</Link>
+            <Link to="/contact#contact-info">Contact</Link>
           </div>
 
           <div className="footer-section">
@@ -58,7 +57,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {currentYear} Bhupendra Patidar. All rights reserved. | Built with <i className="fas fa-heart"></i> using React & Bootstrap</p>
+          <p>© {currentYear} Bhupendra Patidar. All rights reserved.</p>
         </div>
       </div>
     </footer>

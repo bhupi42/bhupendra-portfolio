@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Services.css';
 
 export default function Services() {
@@ -23,7 +24,6 @@ export default function Services() {
       description: 'Comprehensive API testing solutions using modern tools and best practices.',
       features: [
         'RESTful API testing',
-        'GraphQL API testing',
         'API automation scripts',
         'Load and stress testing',
         'API documentation',
@@ -202,9 +202,9 @@ export default function Services() {
           <div className="cta-content">
             <h2>Ready to Improve Your QA Process?</h2>
             <p>Let's discuss how my services can help your organization achieve better quality assurance.</p>
-            <a href="/contact" className="btn btn-primary">
+            <Link to="/contact#contact-info" className="btn btn-primary">
               <i className="fas fa-envelope"></i> Get in Touch
-            </a>
+            </Link>
           </div>
         </div>
       </section>

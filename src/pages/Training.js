@@ -9,6 +9,7 @@ export default function Training() {
       icon: 'fa-play-circle',
       title: 'Playwright Automation Testing From Scratch',
       description: 'Complete Playwright automation framework development course',
+      url: 'http://udemy.com/course/playwright-automation-testing-with-typescript/',
       students: '5000+',
       rating: 4.8,
       duration: '25 hours',
@@ -16,14 +17,26 @@ export default function Training() {
     },
     {
       id: 2,
-      platform: 'Udemy',
+      platform: 'Codebun',
       icon: 'fa-play-circle',
       title: 'Selenium WebDriver with Java and TestNG',
       description: 'Master Selenium automation with Java and TestNG framework',
+      url: 'https://codebun.com/automation-testing-training-with-selenium-java-testng-cucumber/',
       students: '4500+',
       rating: 4.7,
       duration: '30 hours',
       topics: ['WebDriver Basics', 'Page Object Model', 'TestNG Framework', 'CI/CD Integration'],
+    },
+    {
+      id: 7,
+      platform: 'Codebun',
+      icon: 'fa-play-circle',
+      title: 'Selenium with C#, NUnit, SpecFlow and RestSharp',
+      description: 'Hands-on Selenium C# automation training with NUnit, SpecFlow and API integration.',
+      url: 'https://codebun.com/selenium-with-c-nunit-specflow-and-restsharp-training-program/',
+      duration: 'Self-paced',
+      rating: 4.8,
+      topics: ['Selenium C#', 'NUnit', 'SpecFlow', 'RestSharp'],
     },
     {
       id: 3,
@@ -31,6 +44,7 @@ export default function Training() {
       icon: 'fab fa-youtube',
       title: 'YouTube Channel - QA Automation Hub',
       description: 'Free tutorials, tips, and techniques for automation testing',
+      url: 'https://www.youtube.com/@codebun',
       subscribers: '15000+',
       rating: 4.6,
       videos: '200+',
@@ -42,6 +56,7 @@ export default function Training() {
       icon: 'fa-chalkboard-user',
       title: 'Automation Testing Training Program',
       description: 'Comprehensive training program tailored for your team',
+      url: 'https://codebun.com/',
       duration: 'Customizable',
       rating: 4.9,
       format: 'Hands-on',
@@ -53,6 +68,7 @@ export default function Training() {
       icon: 'fa-user-secret',
       title: 'Interview Preparation Session',
       description: 'Prepare for QA automation interviews with expert guidance',
+      url: 'https://codebun.com/',
       duration: '1-2 hours',
       rating: 4.8,
       format: 'One-on-One',
@@ -64,6 +80,7 @@ export default function Training() {
       icon: 'fa-code',
       title: 'API Testing Masterclass',
       description: 'Deep dive into API testing with Postman and RestAssured',
+      url: 'https://codebun.com/',
       duration: 'Customizable',
       rating: 4.7,
       format: 'Online',
@@ -114,55 +131,6 @@ export default function Training() {
                 <h3>{course.title}</h3>
                 <p className="course-description">{course.description}</p>
 
-                <div className="course-meta">
-                  {course.platform === 'YouTube' ? (
-                    <>
-                      <div className="meta-item">
-                        <i className="fas fa-users"></i>
-                        <span>{course.subscribers} Subscribers</span>
-                      </div>
-                      <div className="meta-item">
-                        <i className="fas fa-video"></i>
-                        <span>{course.videos} Videos</span>
-                      </div>
-                    </>
-                  ) : course.platform === 'Udemy' ? (
-                    <>
-                      <div className="meta-item">
-                        <i className="fas fa-users"></i>
-                        <span>{course.students} Students</span>
-                      </div>
-                      <div className="meta-item">
-                        <i className="fas fa-clock"></i>
-                        <span>{course.duration}</span>
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      <div className="meta-item">
-                        <i className="fas fa-clock"></i>
-                        <span>{course.duration}</span>
-                      </div>
-                      <div className="meta-item">
-                        <i className="fas fa-video"></i>
-                        <span>{course.format}</span>
-                      </div>
-                    </>
-                  )}
-                </div>
-
-                <div className="course-rating">
-                  <div className="stars">
-                    {[...Array(5)].map((_, i) => (
-                      <i
-                        key={i}
-                        className={`fa${i < Math.floor(course.rating) ? 's' : 'r'} fa-star`}
-                      ></i>
-                    ))}
-                  </div>
-                  <span className="rating-value">{course.rating}</span>
-                </div>
-
                 <div className="course-topics">
                   <h4>Topics Covered</h4>
                   <div className="topic-tags">
@@ -172,7 +140,13 @@ export default function Training() {
                   </div>
                 </div>
 
-                <a href="#enroll" className="btn btn-primary" style={{ width: '100%', marginTop: 'auto', display: 'inline-block', textAlign: 'center' }}>
+                <a
+                  href={course.url || '#enroll'}
+                  target={course.url ? '_blank' : undefined}
+                  rel={course.url ? 'noopener noreferrer' : undefined}
+                  className="btn btn-primary"
+                  style={{ width: '100%', marginTop: 'auto', display: 'inline-block', textAlign: 'center' }}
+                >
                   <i className="fas fa-external-link-alt"></i> Enroll Now
                 </a>
               </div>

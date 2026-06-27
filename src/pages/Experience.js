@@ -31,7 +31,7 @@ export default function Experience() {
         'Collaborated with development teams',
       ],
       projects: ['London School of E-Commerce', 'Dover Portable', 'Healthcare Portal'],
-      technologies: ['Selenium', 'Cypress', 'JavaScript', 'Python', 'TestNG'],
+      technologies: ['Selenium', 'Playwright', 'JavaScript', 'Python', 'TestNG'],
     },
     {
       company: 'Tech Solutions India',
@@ -62,8 +62,6 @@ export default function Experience() {
           <div className="experience-timeline">
             {experiences.map((exp, index) => (
               <div key={index} className="experience-item card fade-in" style={{ animationDelay: `${0.1 * index}s` }}>
-                <div className="timeline-marker"></div>
-
                 <div className="experience-header">
                   <div>
                     <h3>{exp.position}</h3>
@@ -120,7 +118,7 @@ export default function Experience() {
               <p>Enterprise Projects</p>
             </div>
             <div className="stat-highlight-item">
-              <h3>8+</h3>
+              <h3>9+</h3>
               <p>Years of Experience</p>
             </div>
             <div className="stat-highlight-item">

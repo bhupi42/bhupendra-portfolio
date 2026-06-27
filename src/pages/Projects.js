@@ -7,85 +7,122 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      name: 'Atlas Injury Prevention',
-      domain: 'Healthcare',
-      description: 'Comprehensive injury prevention and management platform for enterprises',
-      technologies: ['Playwright', 'JavaScript', 'API Testing', 'Jenkins'],
-      testingTypes: ['End-to-End Testing', 'API Testing', 'Performance Testing'],
+      name: 'DOVER Corporation',
+      company: 'Datamatics Global Services',
+      role: 'QA Team Lead',
+      duration: '2025 - Present',
+      domain: 'Industrial Manufacturing',
+      description: 'Leading QA initiatives for enterprise manufacturing applications. Managing QA team, sprint testing, release validation, automation strategy and CI/CD implementation.',
+      technologies: ['Playwright', 'TypeScript', 'API Testing', 'Jenkins', 'Azure DevOps', 'Git', 'SQL'],
       responsibilities: [
-        'Designed and maintained automation framework',
-        'Implemented API testing suite',
-        'Led QA team for sprint deliverables',
+        'Lead QA Team',
+        'Sprint Planning',
+        'Automation Strategy',
+        'Release Validation',
+        'Code Reviews',
+        'Mentoring',
+        'Defect Management',
+        'Stakeholder Communication',
       ],
     },
     {
       id: 2,
-      name: 'Bupa UK',
-      domain: 'Insurance & Healthcare',
-      description: 'Health insurance and wellness platform for UK market',
-      technologies: ['Selenium', 'Java', 'TestNG', 'Azure DevOps'],
-      testingTypes: ['Regression Testing', 'Smoke Testing', 'Integration Testing'],
+      name: 'ICICI Bank',
+      company: 'Datamatics Global Services',
+      role: 'Senior QA Automation Engineer',
+      duration: '2024',
+      domain: 'Banking',
+      description: 'Designed and developed a complete Playwright automation framework from scratch for digital banking applications.',
+      technologies: ['Playwright', 'TypeScript', 'NodeJS', 'Allure', 'Jenkins', 'GitHub', 'Azure DevOps', 'REST API'],
       responsibilities: [
-        'Created comprehensive test automation scripts',
-        'Managed test execution and reporting',
-        'Ensured compliance and quality standards',
+        'Framework Design',
+        'POM Architecture',
+        'API Automation',
+        'Parallel Execution',
+        'Reporting',
+        'CI/CD',
+        'Framework Utilities',
+        'Custom Assertions',
       ],
     },
     {
       id: 3,
-      name: 'Manage America',
-      domain: 'Business Management',
-      description: 'Enterprise project and resource management application',
-      technologies: ['Cypress', 'JavaScript', 'Postman', 'GitHub Actions'],
-      testingTypes: ['UI Testing', 'API Testing', 'Cross-browser Testing'],
+      name: 'BUPA UK',
+      company: 'Datamatics Global Services',
+      role: 'QA Automation Engineer',
+      duration: '2024 - 2025',
+      domain: 'Healthcare Insurance',
+      description: 'Automated healthcare insurance workflows including policy management, claims processing and member registration.',
+      technologies: ['Selenium', 'C#', 'NUnit', 'Azure DevOps'],
       responsibilities: [
-        'Developed automation framework from scratch',
-        'Implemented CI/CD pipeline integration',
-        'Performed cross-browser compatibility testing',
+        'Automated policy management workflows',
+        'Automated claims lifecycle scenarios',
+        'Validated member registration journeys',
       ],
     },
     {
       id: 4,
-      name: 'Cooler Screen',
-      domain: 'Entertainment',
-      description: 'Digital entertainment and content streaming platform',
-      technologies: ['Playwright', 'TypeScript', 'API Testing', 'Jenkins'],
-      testingTypes: ['End-to-End Testing', 'Performance Testing', 'Security Testing'],
+      name: 'Atlas Injury Prevention',
+      company: 'Datamatics Global Services',
+      role: 'Automation Engineer',
+      duration: '2021 - 2024',
+      domain: 'Healthcare',
+      description: 'Developed automation framework for injury prevention platform helping organizations improve workplace safety.',
+      technologies: ['SpecFlow', 'C#', 'NUnit'],
       responsibilities: [
-        'Automated critical user flows',
-        'Conducted performance and load testing',
-        'Improved test execution time by 40%',
+        'Built and maintained framework modules',
+        'Covered key prevention workflows',
+        'Improved regression reliability',
       ],
     },
     {
       id: 5,
-      name: 'London School of E-Commerce',
-      domain: 'Education',
-      description: 'Online e-commerce training and certification platform',
-      technologies: ['Selenium', 'Python', 'Postman', 'TestRail'],
-      testingTypes: ['Functional Testing', 'Integration Testing', 'UAT'],
+      name: 'Manage America',
+      company: 'Datamatics Global Services',
+      role: 'QA Engineer',
+      duration: '2020 - 2023',
+      domain: 'Property Management',
+      description: 'Automated property management platform handling leasing, accounting and property workflows.',
+      technologies: ['Java', 'Selenium', 'TestNG'],
       responsibilities: [
-        'Created test cases and automation scripts',
-        'Performed end-to-end testing',
-        'Coordinated UAT activities',
+        'Automated leasing and tenant flows',
+        'Validated accounting processes',
+        'Executed stable regression suites',
       ],
     },
     {
       id: 6,
-      name: 'Dover Portable',
-      domain: 'E-Commerce',
-      description: 'Portable electronics and accessories marketplace',
-      technologies: ['Cypress', 'JavaScript', 'API Testing', 'GitHub'],
-      testingTypes: ['Functional Testing', 'API Testing', 'Mobile Testing'],
+      name: 'Cooler Screen',
+      company: 'Datamatics Global Services',
+      role: 'QA Engineer',
+      duration: '2019 - 2022',
+      domain: 'Retail Advertising',
+      description: 'Performed API automation for digital retail refrigerator advertising platform.',
+      technologies: ['Postman', 'RestAssured', 'Java'],
       responsibilities: [
-        'Implemented automation for mobile and web',
-        'Created comprehensive API test suite',
-        'Maintained test automation framework',
+        'Automated critical API validations',
+        'Maintained API regression suites',
+        'Improved defect turnaround',
+      ],
+    },
+    {
+      id: 7,
+      name: 'TeamWork',
+      company: 'Datamatics Global Services',
+      role: 'QA Engineer',
+      duration: '2019 - 2021',
+      domain: 'Project Management',
+      description: 'Developed BDD automation framework for employee and project management platform.',
+      technologies: ['Java', 'Selenium', 'Cucumber', 'TestNG'],
+      responsibilities: [
+        'Implemented BDD scenarios and glue code',
+        'Automated employee and project modules',
+        'Integrated suites into CI pipelines',
       ],
     },
   ];
 
-  const categories = ['all', 'Healthcare', 'Business Management', 'Entertainment', 'Education', 'E-Commerce'];
+  const categories = ['all', ...new Set(projects.map((project) => project.domain))];
 
   const filteredProjects = filter === 'all' ? projects : projects.filter(p => p.domain === filter);
 
@@ -123,21 +160,22 @@ export default function Projects() {
                 <p className="project-description">{project.description}</p>
 
                 <div className="project-section">
+                  <h4><i className="fas fa-building"></i> Project Details</h4>
+                  <div className="testing-tags">
+                    <span className="testing-tag">Client: {project.name}</span>
+                    <span className="testing-tag">Company: {project.company}</span>
+                    <span className="testing-tag">Role: {project.role}</span>
+                    <span className="testing-tag">Duration: {project.duration}</span>
+                  </div>
+                </div>
+
+                <div className="project-section">
                   <h4><i className="fas fa-briefcase"></i> Responsibilities</h4>
                   <ul className="responsibility-list">
                     {project.responsibilities.map((resp, idx) => (
                       <li key={idx}>{resp}</li>
                     ))}
                   </ul>
-                </div>
-
-                <div className="project-section">
-                  <h4><i className="fas fa-flask"></i> Testing Types</h4>
-                  <div className="testing-tags">
-                    {project.testingTypes.map((type, idx) => (
-                      <span key={idx} className="testing-tag">{type}</span>
-                    ))}
-                  </div>
                 </div>
 
                 <div className="project-footer">

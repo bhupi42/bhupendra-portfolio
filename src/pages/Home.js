@@ -4,7 +4,7 @@ import './Home.css';
 
 export default function Home() {
   const stats = [
-    { number: '8+', label: 'Years Experience' },
+    { number: '9+', label: 'Years Experience' },
     { number: '50+', label: 'Enterprise Projects' },
     { number: '100%', label: 'Playwright Specialist' },
     { number: '5+', label: 'Languages Mastered' },
@@ -21,7 +21,7 @@ export default function Home() {
               Senior QA Automation Engineer | Playwright | API Testing | Selenium | AI-Powered Testing
             </p>
             <p className="fade-in">
-              QA Automation Engineer with 8+ years of experience in Manual Testing, Automation Testing, 
+              QA Automation Engineer with 9+ years of experience in Manual Testing, Automation Testing, 
               API Testing, and End-to-End Quality Assurance. Passionate about building robust automation 
               frameworks and mentoring other QA professionals.
             </p>

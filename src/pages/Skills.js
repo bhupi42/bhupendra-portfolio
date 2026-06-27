@@ -8,7 +8,7 @@ export default function Skills() {
       skills: [
         { name: 'Playwright', level: 95 },
         { name: 'Selenium', level: 90 },
-        { name: 'Cypress', level: 85 },
+        { name: 'Puppeteer', level: 85 },
         { name: 'TestCafe', level: 80 },
       ],
     },

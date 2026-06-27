@@ -8,6 +8,26 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
+  align-items: start;
+}
+
+.contact-right h3 {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.contact-faq-grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.contact-faq-grid .faq-item {
+  padding: 20px;
 }
 
 /* Contact Info */
@@ -317,6 +337,10 @@ button:disabled {
   .contact-content {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+  .contact-right {
+    margin-top: 10px;
   }
 
   .faq-grid {
